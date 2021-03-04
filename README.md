@@ -44,21 +44,6 @@ Sample a few state-action pairs and plot their Q-values along episodes
 
 Check whether the total rewards earned per episode are showing stability
 
-          Showing one of these convergence plots will suffice.
+          Showing one of these convergence plots.
 
- 
-
-# Important points to consider while training:
-
-Choose 
-?
--decay function carefully. Make sure that the decay rate allows the agent to explore the state space maximally at the start, and then to settle down to a fixed exploration rate (the results will converge as soon as e becomes 0, though results may not be optimal if the agent doesn’t explore much).
-
-List down all the metrics (such as total rewards for n episodes, loss values, q-values, etc.) you want to track for checking the convergence and save them after every few episodes. It is recommended that you store and check your results after every ~1000 episodes.
-
-Don’t forget to save your model (weights) after every few iterations.
-
-Make sure to debug your code before running for a large number of episodes. Run for 3-4 steps in an episode, and check whether the reward, next state computations etc. are correct. Only when the code is debugged, run it for a larger number of episodes.
-
-For a Windows 64-bit system, and with an 8GB RAM, it takes around 1 hour to train for 1000 episodes with the average length of episodes 100.
  
